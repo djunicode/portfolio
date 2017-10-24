@@ -1,0 +1,29 @@
+h2 {
+  text-align: center;
+  color: #fd1217;
+}
+body {
+    background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    border : solid 2.5px #afed10;
+    border-radius: 3px 3px;
+    box-shadow: ;
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container h1 {
+    text-align: center;
+    color: #5393b1;
+}
+p{
+    font-size: 24px;
+}
