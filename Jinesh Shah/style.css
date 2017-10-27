@@ -1,0 +1,19 @@
+body{
+  background: url(coffee1.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.hero{
+  color: #644;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 65px;
+  letter-spacing: -.05em;
+  line-height: 1.2em;
+  font-family: fantasy;
+}
+
+.ima{
+  height:100px;
+  width: 150px;
+}
