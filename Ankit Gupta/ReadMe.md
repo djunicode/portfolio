@@ -10,4 +10,4 @@ You can grab a pdf of it from the current folder as well.
 
 That's how I look by the way:
 
-![picture](.\picture.jpg)
+![picture](./picture.jpg)
