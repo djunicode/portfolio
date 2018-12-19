@@ -1,5 +1,5 @@
 #Jugal Mistry
-<img src="png/profile.png" width="256">
+<br/><img src="png/profile.png" width="256"/>
   
 ###Languages 
 C, C++, Java, Python, Javascript
