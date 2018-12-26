@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.header {
+     border:1px solid black;
+     background-color:black;
+     color:white;
+	 font-family:SansSerif;
+	 padding:auto;
+	  word-wrap:break-word;
+}
+.menu {
+     width:100%;
+	 height:500px;
+     word-wrap:break-word;
+	 background-size:cover;
+	 background-repeat:no-repeat;
+	 background: url('cvv1.jpg');
+	 background-size:cover;
+	 background-width:100%;
+}
+.orange{
+     width:70%;
+	 height:100px;
+	 background-color:orange;
+	 float:center;
+	 margin-top:15px;
+	 padding:20px;
+	 margin-left:15%;
+	 word-wrap:break-word;
+	
+	
+	 
+}
+.white{
+     width:30%;
+	 height:100px;
+	 background-color:white;
+	 float:center;
+	 padding:20px;
+	 margin-left:35%;
+	 margin-top:15%;
+	 margin-bottom:0%;
+	 }
+.icons{
+     width:30%;
+     height:20px;
+     background-color:white;
+     float:center;
+     padding:20px;
+	 margin-left:35%;
+     }
+ 
+
+</style>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 3vw;
+  background-color: white;
+  
+}
+.grid-container > div {
+ 
+  
+  text-align: left;
+  
+  font-size: 2vw;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+#div1 {
+    width: 100px;
+    height: 15px;
+    background-color:orange;
+    font-weight: bold;
+    position: relative;
+    animation: mymove1 10s ;
+     animation-fill-mode: forwards;
+}
+
+
+#div1 {animation-timing-function: linear;}
+
+@keyframes mymove1 {
+    from {width: 10vw;}
+    to {width: 30vw;}
+}
+
+
+
+</style>
+<style>
+#skills {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+	margin-top:20px;
+}
+
+#skills  td, #skills th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#skills tr:nth-child(even){background-color: #f2f2f2;}
+
+#skills tr:hover {background-color: #ddd;}
+
+#skills th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: orange;
+    color: white;
+}
+</style>
+
+</head>
+<body >
+<div class="header">
+<h1 style="font-size:50px;">unicode<span style="color:green;">.</span>   <span style="color:gray;"> CV</span></h1>
+</div>
+<div class="menu">
+
+<div class="orange">
+<table style="color:white;width:100%;text-align:center;font-size:1.5vw">
+  <tr>
+  <td width="(100/3)%"><i class="fa fa-map-marker" style="font-size:36px ;color:white"></i></td>
+    <td id="city"width="(100/3)%"></td>
+	<td><i class="fa fa-phone" style="font-size:3vw;color:white"></i></td>
+    <td id="mobile" width="(100/3)%"></td>
+	<td><i class="fa fa-envelope" style="font-size:3vw;color:white"></i></td>
+	<td id="email"width="(100/3)%"></td>
+  </tr>
+  <tr>
+  <td></td>
+    <td id="state" width="(100/3)%"></td>
+	<td></td>
+    <td id="landline" width="(100/3)%"></td>
+	<td></td>
+	<td id="github" width="(100/3)%"></td>
+  </tr>
+  
+  
+</table>
+</div>
+
+<div class="white">
+<h1 id="demo" style="color:black;font-family:Arial Rounded MT;font-size:2vw;margin-left:6.0vw">  </h1>
+<h2 id="occupation"style="color:orange;margin-left:8.0vw;font-size:1.3vw"></h2>
+</div>
+
+</div>
+<div class="icons"> <a href="https://www.facebook.com/swapnil.kadakia" target="blank"><i class="fa fa-facebook-official" style="font-size:3vw;color:darkblue;margin-left:8.1vw"></i></a>
+<a href="https://www.instagram.com/swapnilkadakia/?hl=en " target="blank"><i class="fa fa-instagram" style="font-size:3vw;color:deeppink;"></i></a>
+<i class="fa fa-twitter" style="font-size:3vw;color:cyan"></i>
+<a href="https://github.com/swapnilkadakia" target="blank"><i class="fa fa-github" style="font-size:3vw;color:black"></i></a>
+</div>
+
+<br><br><br>
+<script>
+
+var req = new XMLHttpRequest ();
+req.onload = function x () {
+	if (req.readyState == 4 && req.status == 200) {
+		var data = JSON.parse (req.responseText);
+		document.getElementById("demo").innerHTML=data.name;
+		document.getElementById("occupation").innerHTML=data.occupation;
+		document.getElementById("city").innerHTML=data.information[0].city;
+		document.getElementById("state").innerHTML=data.information[0].state;
+		document.getElementById("mobile").innerHTML=data.information[0].mobile;
+		document.getElementById("landline").innerHTML=data.information[0].landline;
+		document.getElementById("email").innerHTML=data.information[0].email;
+		document.getElementById("github").innerHTML=data.information[0].github;
+		document.getElementById("degree").innerHTML=data.information[0].degree;
+		document.getElementById("pointer").innerHTML=data.information[0].pointer;
+		document.getElementById("highschool").innerHTML=data.information[0].highschool;
+		document.getElementById("per12").innerHTML=data.information[0].per12;
+		document.getElementById("school").innerHTML=data.information[0].school;
+		document.getElementById("per10").innerHTML=data.information[0].per10;
+		document.getElementById("BE").innerHTML=data.information[0].BE;
+		document.getElementById("twelfth").innerHTML=data.information[0].twelfth;
+        document.getElementById("tenth").innerHTML=data.information[0].tenth;		
+		document.getElementById("lang1").innerHTML=data.information[0].lang1;
+		document.getElementById("lang2").innerHTML=data.information[0].lang2;
+		document.getElementById("lang3").innerHTML=data.information[0].lang3;
+		document.getElementById("web1").innerHTML=data.information[0].web1;
+		document.getElementById("web2").innerHTML=data.information[0].web2;
+		document.getElementById("web3").innerHTML=data.information[0].web3;
+		document.getElementById("web4").innerHTML=data.information[0].web4;
+		document.getElementById("creative").innerHTML=data.information[0].creative;
+	}
+}
+req.open ("GET","https://gist.githubusercontent.com/swapnilkadakia/6ef48584563f74d13d8a55920e030f31/raw/8dd1f05b70102c7fe87788aaf083d27d2cbbb26a/resume.json", true);
+req.send ();
+
+
+
+
+</script>
+
+<div class="grid-container">
+  <div> 
+     <h4>SKILLS</h4>	
+  <div id="div1"></div>
+  <table id="skills">
+   <tr>
+   <th><b>Languages</b></th>
+   </tr>
+   <tr>
+   <td id="lang1"></td>
+   </tr>
+   <tr>
+   <td id="lang2"></td>
+   </tr>
+   <tr>
+   <td id="lang3"></td>
+   </tr>
+   </table>
+   <table id="skills">
+   <tr>
+   <th><b>WEB</b></th>
+   </tr>
+   <tr>
+   <td id="web1"></td>
+   </tr>
+   <tr>
+   <td id="web2"></td>
+   </tr>
+   <tr>
+   <td id="web3"></td>
+   </tr>
+   <tr>
+   <td id="web4"></td>
+   </tr>
+   </table>
+  <br><br> 
+         
+</div> 
+  <div>
+  <h4>EDUCATION</h4>	
+       <div id="div1"></div>
+	   <b id="degree"></b><br>
+	   <i id="pointer"></i>
+	   <p id="BE"></p>
+	    <b id="highschool"></b><br>
+	   <i id="per12"></i>
+	   <p id="twelfth"></p>
+         <b id="school"></b><br>
+	   <i id="per10"></i>
+	   <p id="tenth"></p>
+  </div>     
+       
+</div>
+   
+</div>
+</div> 
+<center>
+<p style="color:gray;font-size:12px;">
+2018<br>
+&copy;cv
+</p>
+</center>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
