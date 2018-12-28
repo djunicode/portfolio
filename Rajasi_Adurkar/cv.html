@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #404040;
+    overflow-x: hidden;
+}
+
+img{
+	box-shadow: 5px 5px 5px 5px;
+	margin-left: auto;
+    	margin-right: auto;
+	margin-top: 10px;
+	display: block;
+}
+
+
+.name{
+	color: white;
+	font-family: Helvetica;
+	text-align: center;
+	
+}
+
+.content{
+	color: black;
+	margin-left: 400px;
+    	padding-left: 20px;
+	margin-top: 30px;
+	margin-right: 80px;
+	font-family: Helvetica;
+}
+
+.orange{
+	color: #FF8C00;
+	font-family: serif;
+	padding-left: 20px;
+	text-decoration: underline;
+	
+}
+.leftcon{
+	color: white;
+	font-family: Helvetica;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 15px;
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+<img src="cv1.jpg" alt="cv image" width="200" height="200">
+<p id="demo" class="name"></p>
+<p class="orange"><i class="fa fa-bars"></i>  SUMMARY</p>
+<p id="demo1" class="leftcon"></p>
+<p class="orange"><i class="glyphicon glyphicon-envelope"></i>  CONTACT<br>BITBUCKET</p>
+<p id="demo2" class="leftcon"></p>
+<p class="orange">EMAIL ID</p>
+<p id="demo3" class="leftcon"></p>
+
+<p class="orange">PHONE</p>
+<p id="demo4" class="leftcon"></p>
+
+<p class="orange">GIT HUB</p>
+<p id="demo5" class="leftcon"></p>
+
+</div>
+
+<div class="content">
+<h3 class="orange"><i class="glyphicon glyphicon-education"></i>  EDUCATION</h3>
+<ul>
+	<li id="sample2"></li>
+	<ul style="list-style-type:none">
+	<li id="sample1"></li>
+	<li id="sample3"></li>
+	<li id="sample4"></li>
+	</ul>
+	
+	<li id="sample5"></li>
+	<ul style="list-style-type:none">
+	<li id="sample6"></li>
+	<li id="sample7"></li>
+	</ul>
+
+	<li id="sample8"></li>
+	<ul style="list-style-type:none">
+	<li id="sample9"></li>
+	<li id="sample10"></li>
+	</ul>
+</ul>
+
+<h3 class="orange"><i class="glyphicon glyphicon-remove"></i>  SKILLS</h3>
+<ul>
+	<li id="test"></li>
+	<ul style="list-style-type:disc">
+	<li id="test1"></li>
+	<li id="test2"></li>
+	<li id="test3"></li>
+	<li id="test4"></li>
+	</ul>
+	
+	<li id="test5"></li>
+	<ul style="list-style-type:disc">
+	<li id="test6"></li>
+	<li id="test7"></li>
+	<li id="test8"></li>
+	</ul>
+</ul>
+
+<h3 class="orange"><i class="glyphicon glyphicon-file"></i>  PROJECTS</h3>
+<ul>
+	<li id="abc"></li>
+	<ul style="list-style-type:disc">
+	<li id="abc1"></li>
+	<li id="abc2"></li>
+	<li id="abc3"></li>
+	<li id="abc4"></li>
+	</ul>
+</ul>
+
+
+
+</div>
+
+
+
+
+<script>
+var req=new XMLHttpRequest();
+req.onload=function x() {
+	if(req.readyState==4&&req.status==200) {
+		var data=JSON.parse(req.responseText);
+		document.getElementById("demo").innerHTML=data.information[0].name;
+		document.getElementById("demo1").innerHTML=data.information[1].summary;
+		document.getElementById("demo2").innerHTML=data.information[2].bitbucket;
+		document.getElementById("demo3").innerHTML=data.information[3].emailid;
+		document.getElementById("demo4").innerHTML=data.information[4].number;
+		document.getElementById("demo5").innerHTML=data.information[5].gitid;
+		
+		document.getElementById("sample1").innerHTML=data.information[6].degree;
+		document.getElementById("sample2").innerHTML=data.information[6].year;
+		document.getElementById("sample3").innerHTML=data.information[6].college;
+		document.getElementById("sample4").innerHTML=data.information[6].pointer;
+		document.getElementById("sample5").innerHTML=data.information[7].year;
+		document.getElementById("sample6").innerHTML=data.information[7].college;
+		document.getElementById("sample7").innerHTML=data.information[7].marks;
+		document.getElementById("sample8").innerHTML=data.information[8].year;
+		document.getElementById("sample9").innerHTML=data.information[8].school;
+		document.getElementById("sample10").innerHTML=data.information[8].marks;
+
+		document.getElementById("test").innerHTML=data.information[9].technical;
+		document.getElementById("test1").innerHTML=data.information[9].languages;
+		document.getElementById("test2").innerHTML=data.information[9].web;
+		document.getElementById("test3").innerHTML=data.information[9].tools;
+		document.getElementById("test4").innerHTML=data.information[9].concepts;
+
+		document.getElementById("test5").innerHTML=data.information[10].softskills;
+		document.getElementById("test6").innerHTML=data.information[10].a;
+		document.getElementById("test7").innerHTML=data.information[10].b;
+		document.getElementById("test8").innerHTML=data.information[10].c;
+
+		document.getElementById("abc").innerHTML=data.information[11].topic;
+		document.getElementById("abc1").innerHTML=data.information[11].a;
+		document.getElementById("abc2").innerHTML=data.information[11].b;
+		document.getElementById("abc3").innerHTML=data.information[12].language;
+		document.getElementById("abc4").innerHTML=data.information[12].tools;
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+req.open("GET","https://gist.githubusercontent.com/rajasi1999/d6650d647525c113434396de82be4a55/raw/67dfb74b82bee9e8cc83a1350fe5dbdcdb37cbc5/resume.json",true);
+req.send();
+
+</script>
+
+
+
+
+</body>
+</html>
