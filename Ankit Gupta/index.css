@@ -1,0 +1,125 @@
+.myheader {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-size: 32px;
+    z-index: 10;
+}
+
+.myheader div {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#top-right ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+#top-right li {
+    display: block;
+    float: right;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top: 9px;
+}
+
+#top-right img {
+    height: 32px;
+}
+
+#profilepic {
+    max-height: 50px;
+    width: auto;
+}
+
+body {
+    background-color: #eeeeee;
+    background-image: url("./waves.jpg");
+}
+
+.main-page {
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 85px;
+    padding: 3%;
+    padding-top: 3%;
+    font-family: 'Roboto Condensed';
+}
+
+.main-page div {
+    margin-bottom: 5%;
+}
+
+.main-page h4 {
+    margin-bottom: 2%;
+}
+
+img {
+    display: block;
+}
+
+#linksbox {
+    margin-left: 25px;
+    position: fixed;
+    top: 85px;
+    width:20%;
+    z-index: 5;
+}
+
+h5 {
+    padding-left: 5px;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+@media screen and (max-width: 768px) {
+    #linksbox {
+        display:none;
+    }
+    .main-page {
+        margin-left: 0;
+    }
+    .main-page {
+        width:100%;
+    }
+    ul {
+        padding-left: 0;
+    }
+    #top-right {
+        display: none;
+    }
+}
+
+/* Paragraph formatting */
+
+#Experience ul, #Education ul {
+    list-style-type: square;
+}
+
+.name {
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.position, .certification {
+    font-style: italic;
+}
+
+.timespan {
+    color: gray;
+}
+
+.link {
+    float: right;
+}
+
+#Qualifications, #Qualifications .row {
+    margin-bottom: 0;
+}
