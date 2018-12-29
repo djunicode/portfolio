@@ -14,8 +14,13 @@
     padding-top: 5px;
 }
 
-#top-right ul {
+ul {
     list-style-type: none;
+    padding: 0;
+}
+
+#top-right ul {
+    /* list-style-type: none; */
     margin:0;
     padding: 0;
     display: block;
@@ -34,6 +39,21 @@
     height: 32px;
 }
 
+.Contact img {
+    height: 32px;
+}
+
+.Contact li {
+    display: block;
+    float: right;
+}
+
+.Contact {
+    position: absolute;
+    top:25px;
+    right: 25px;
+}
+
 #profilepic {
     max-height: 50px;
     width: auto;
@@ -50,8 +70,9 @@ body {
     margin-right: 10%;
     margin-top: 85px;
     padding: 3%;
-    padding-top: 3%;
+    padding-top: 60px;
     font-family: 'Roboto Condensed';
+    text-align: center;
 }
 
 .main-page div {
@@ -85,8 +106,6 @@ h5 {
     }
     .main-page {
         margin-left: 0;
-    }
-    .main-page {
         width:100%;
     }
     ul {
@@ -99,9 +118,9 @@ h5 {
 
 /* Paragraph formatting */
 
-#Experience ul, #Education ul {
+/* #Experience ul, #Education ul {
     list-style-type: square;
-}
+} */
 
 .name {
     font-weight: bold;
@@ -122,4 +141,10 @@ h5 {
 
 #Qualifications, #Qualifications .row {
     margin-bottom: 0;
+}
+
+#Awards ul {
+    padding-left:10%;
+    list-style-type: disc;
+    text-align: left;
 }

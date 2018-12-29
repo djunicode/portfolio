@@ -1,31 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-    <head>
-        <title>Ankit Gupta</title>
-        <script></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
-        <header class="myheader">
-            <div class="row">
-                <div class="col-xs-3">
-                    <img src="./profilepic.jpg" alt="Picture">
-                </div>
-                <div class="col-xs-6">
-                    <h3>Ankit Gupta</h3>
-                </div>
-                <div class="col-xs-3">
-                    <a href="#">Links</a>
-                </div>
-            </div>
-        </header>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 </head>
 <body>
@@ -52,7 +24,7 @@
                 <div class="col-10 col-sm-8 col-md-4 col-lg-4">
                     Ankit Gupta
                 </div>
-                <div class="col-sm-2 col-md-5 col-lg-4" id="top-right">
+                <div class="col-sm-2 col-md-5 col-lg-4" class="Contact" id="top-right">
                     <ul>
                         <li><a href="http://linkedin.com/in/ankitgupta99/"><img src="./In-2C-34px-TM.png"></a></li>
                         <li><a href="https://gitlab.com/Wizdem"><img src="./gitlab1600.png"></a></li>
@@ -70,9 +42,9 @@
             <h4 class="card-title">Links</h4>
             <div class="card-text">
                 <ul>
-                    <li><a href="#Qualifications">Qualifications</a></li>
                     <li><a href="#Positions">Positions</a></li>
                     <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#Qualifications">Qualifications</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Education">Education</a></li>
                     <li><a href="#Awards">Awards</a></li>
@@ -84,9 +56,16 @@
         <div class="main-page card">
             <div class="card-body">
                 <div class="card-text">
-                    <!-- Address: A-2206 Oberoi Park View, Thakur Village, Kandivali East, Mumbai, Maharashtra, India 400101
-                    Email: argankit@gmail.com		Mobile: +91-9833482539
-                    LinkedIn: linkedin.com/in/ankitgupta99	Github: github.com/WizDemirider        Gitlab: gitlab.com/Wizdem -->
+                    <div class="Contact">
+                        <ul>
+                            <li><a href="http://linkedin.com/in/ankitgupta99/"><img src="./In-2C-34px-TM.png"></a></li>
+                            <li><a href="https://gitlab.com/Wizdem"><img src="./gitlab1600.png"></a></li>
+                            <li><a href="https://github.com/WizDemirider"><img src="./GitHub-Mark-32px.png"></a></li>
+                            <li><a href="http://maps.google.com/?q=A2206 Oberoi Park View Thakur Village Kandivali East Mumbai 400101"><img src="pin.png"></a></li>
+                            <li><a href="mailto:argankit@gmail.com"><img src="./png-logo-mail-4.png"></a></li>
+                            <li><a href="tel:+919833482539"><img src="./contacts.png"></a></li>
+                        </ul>    
+                    </div>
                     <div id="Positions">
                         <h4>POSITIONS OF RESPONSIBILITY</h4>
                         <ul>
@@ -227,11 +206,11 @@
         // causes offsetAnchor to be called after the page jump.
         window.setTimeout(function() {
             offsetAnchor();
-        }, 0);
+        }, 100);
         });
 
         // Set the offset when entering page with hash present in the url
-        window.setTimeout(offsetAnchor, 0);
+        window.setTimeout(offsetAnchor, 100);
     </script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
