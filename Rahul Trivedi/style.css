@@ -1,0 +1,387 @@
+body
+{
+border:0;
+font:inherit;
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+display: block;
+}
+
+html, body 
+{
+	background: #181818;
+	font-family: 'Lato', helvetica, arial, sans-serif;
+	font-size: 16px; 
+	color: #222;
+}
+
+.clear {clear: both;}
+
+p 
+{
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+	color: #444;
+}
+
+@media all and (min-width: 300px) 
+{
+
+
+#myproject a
+{
+	color: orange; 
+	text-decoration: none;
+}
+
+#myproject  :hover
+{ 
+		color: #cf8a05;
+}
+
+
+#cv 
+{
+	width: 80%;
+	max-width: 800px;
+	background: #f3f3f3;
+	margin: 30px auto;
+	transition: 2s;
+}
+
+
+.mainDetails 
+{
+	padding: 25px 35px;
+	border-bottom: 2px solid #cf8a05;
+	background: #ededed;
+	opacity: 0.3;
+}
+
+.mainDetails:hover
+{
+	opacity: 1;
+}
+
+#name h1 
+{
+	font-size: 2.5em;
+	font-weight: 700;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	margin-bottom: -6px;
+}
+
+#mname
+{
+	color: #cf8a05;
+	transition: 1s;
+	position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;    
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0*/ 
+@-webkit-keyframes example {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+@keyframes example {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+#mname:hover
+{
+	transform: rotate(360deg);
+}
+
+#mainArea 
+{
+	opacity: 0.2;
+	padding: 0 40px;
+	transition: 2s;
+}
+
+#mainArea:hover
+{
+	opacity: 1;
+}
+
+#headshot 
+{
+	width: 12.5%;
+	float: left;
+	margin-right: 30px;
+	transition: 1s;
+	position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;    
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0*/ 
+@-webkit-keyframes example {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+@keyframes example {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+
+#headshot:hover
+{
+	transform: translateY(100px)  scale(3.5) rotate(360deg);
+}
+
+#headshot img 
+{
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+}
+
+#name 
+{
+	float: left;
+}
+
+#contactDetails 
+{
+	float: right;
+	position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;    
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0*/ 
+@-webkit-keyframes example {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+@keyframes example {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+#contactDetails ul 
+{
+	list-style-type: none;
+	font-size: 0.9em;
+	margin-top: 2px;
+}
+
+#contactDetails ul li 
+{
+	margin-bottom: 3px;
+	color: #cf8a05;
+}
+
+
+#contactDetails,a 
+{
+	color: orange; 
+	text-decoration: none;
+}
+
+#contactDetails, ul li :hover 
+{ 
+		color: #cf8a05 ;
+}
+
+
+#remail:hover
+{
+	transform: translateX(40px) scale(1.5);
+}
+
+#rgithub:hover
+{
+	transform: translateX(40px) scale(1.5);
+}
+
+#rmobile:hover
+{
+	transform: translateX(40px) scale(1.5);
+}
+
+
+section 
+{
+	border-top: 1px solid #dedede;
+	padding: 20px 0 0;
+}
+
+.sectionTitle 
+{
+	float: left;
+	width: 25%;
+	position: relative;
+    -webkit-animation-name: slideleft;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: slideleft;
+    animation-duration: 2s;    
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0*/ 
+@-webkit-keyframes slideleft {
+    from {left: -100px;}
+    to {left: 0px;}
+}
+
+@keyframes slideleft {
+    from {left: -100px;}
+    to {left: 0px;}
+}
+
+.sectionTitle:hover
+{
+	transform: scale(1.5) translateX(20px);
+}
+
+.sectionContent 
+{
+	float: left;
+	width: 72.5%;
+	position: relative;
+    -webkit-animation-name: slideright;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: slideright;
+    animation-duration: 2s;    
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0*/ 
+@-webkit-keyframes slideright {
+    from {right: -300px;}
+    to {right: 0px;}
+}
+
+@keyframes slideright {
+    from {right: -300px;}
+    to {right: 0px;}
+}
+
+
+.sectionContent:hover
+{
+	transform: translateX(50px) scale(1.25);
+}
+
+.sectionTitle h1 
+{
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #cf8a05;
+}
+
+.sectionContent h2 
+{
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: -2px;
+}
+
+
+.keySkills ul li 
+{
+	margin-bottom: 3px;
+}
+
+}
+
+@media all and (max-width: 601px) 
+{
+	#cv 
+	{
+		width: 95%;
+		margin: 10px auto;
+		min-width: 280px;
+	}
+
+	#name
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+		
+	}
+	
+
+	 #contactDetails 
+	 {
+		float: none;
+		width: 100%;
+		text-align: left;
+		clear: both;
+	}
+	
+	.sectionTitle, .sectionContent 
+	{
+		float: none;
+		width: 100%;
+	}
+	
+	.sectionTitle 
+	{
+		margin-left: -2px;
+		font-size: 1.25em;
+	}
+	
+}
+
+@media all and (max-width: 480px) 
+{
+	.mainDetails 
+	{
+		padding: 15px 15px;
+	}
+	
+	section 
+	{
+		padding: 15px 0 0;
+	}
+	
+	#mainArea 
+	{
+		padding: 0 25px;
+	}
+	#name h1 
+	{
+		line-height: .8em;
+		margin-bottom: 4px;
+
+	}
+
+}
+
+@media print 
+{
+    #cv 
+    {
+        width: 100%;
+    }
+}
+
