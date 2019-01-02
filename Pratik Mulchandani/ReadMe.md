@@ -1,1 +1,1 @@
-Hosted at pratikk.ml
+Hosted at (www.pratikk.ml)
