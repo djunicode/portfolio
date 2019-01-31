@@ -1,0 +1,48 @@
+{
+	
+	"basicinfo": {
+    "name": "Rahul Trivedi",
+    "dob": "10,January-1999",
+    "address": [
+      {
+        "line": "Boras-pada road, Mahavir-nagar"
+      },
+      {
+        "line": "Mumbai"
+      },
+      {
+        "line": "Maharashtra"
+      },
+      {
+        "line": "4000-67"
+      }
+    ]
+  },
+  "education":
+   [
+    {
+      "name": "RBK high school (SSC passed) "
+      
+    },
+    {
+      "name": "Prakash Vidalaya (HSC passed)"
+    
+    },
+    {
+      "name": "DJ Sanghvi COE (BE in Computer(ongoing))"
+    }
+   ], 
+
+   "contactme": 
+   {
+   		"email":"rahultrivedi768@gmail.com",
+   		"mobile":"9870955077",
+   		"github":"https://github.com/RahulSTrivedi"
+   },
+
+   "skills":["HTML","CSS","BOOTSTRAP","JAVA-SCRIPT","J-QUERY","JSON","AJAX","JAVA","C"] ,
+  
+   "project":"https://github.com/RahulSTrivedi/Project1"
+
+  
+}

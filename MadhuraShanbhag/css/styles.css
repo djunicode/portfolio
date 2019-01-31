@@ -1,0 +1,171 @@
+/************************************** TAG SELECTORS *************************************************************************/
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Noto Serif SC', serif;
+  background-color: #8eedd7;
+}
+
+div {
+  padding: 10px 0;
+  margin: 1px;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Tangerine', cursive;
+  font-size: 5.625rem;   /* 100% = 16px = 1em so 90px = 562.5% = 5.625em*/
+  font-weight: bold;
+  color: #4ab19a;
+}
+
+h2 {
+  margin-top: 50px;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  color: #77f4d7;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  color: #298e77;
+
+}
+
+img {
+  display: inline-block;
+  text-align: center;
+}
+
+hr {
+  margin: 50px auto;
+  width: 3%;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: lightgrey;
+  border-width: 6px;
+}
+
+a {
+  margin: 50px;
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  margin: 20px;
+}
+/************************************** CLASS SELECTORS *************************************************************************/
+.top-container {
+  background-color: #cdffeb;
+  position: relative;
+  padding-top: 50px;
+  height: auto;
+  color: #324a5e;
+}
+
+.middle-container {
+  background-color: #009f9d;
+  height: auto;
+  position: relative;
+}
+
+.top-cloud {
+  position: relative;
+  left: 230px;
+  height: 100px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 280px;
+  height: 100px;
+}
+
+.mountain {
+  width: 65%;
+  margin-bottom: 0;
+}
+
+.contact-me {
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.bottom-container {
+  background-color: #07456f;
+  height: auto;
+  position: relative;
+  color: #b7e2f7;
+}
+
+/*.cute-chibi {
+  height: 150px;
+  position: absolute;
+  left: 300px;
+  top:5px;
+}*/
+
+.skill-pic {
+  height: 200px;
+  margin: 20px;
+}
+
+.stress {
+  font-weight: bold;
+}
+
+.p-skill {
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.course-list {
+  font-size: 1.2rem;
+}
+
+.course-table {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.edu-container {
+  background-color: #0f0a3c;
+  height: auto;
+  color: #ccf9f9;
+  padding: 20px;
+}
+
+.edu-table {
+  border-spacing: 50px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.btn {
+  background-color: #07456f;
+  border-spacing: 5px;
+  padding: 5px;
+  border: solid;
+  border-width: 1px;
+  margin-top: 20px;
+}
+
+.envelope {
+  height: 25px;
+
+}
+
+.footer {
+  background-color: #080523;
+  height: auto;
+  color: #bbc4f7;
+}
+
+.links {
+  background-color: #070611;
+  height: auto;
+  color: white;
+}
