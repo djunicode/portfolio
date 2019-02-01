@@ -1,0 +1,10 @@
+
+{"personalinfo": [
+	{"name": "PRIYA SHAH"},
+	{"opt":"UNICODE:FRONT-END DEVELOPER"},
+	{"mobile":"CONTACT NO:9619045206","email":"EMAIL ID:pshah3103@gmail.com","github":"GITHUB:priyashah31"},
+	{"education":"EDUCATTION"},
+	{"year":"2017-2021","depart":"S.E. COMPUTER ENGINEERING","college":"Dwarkadas J.Sanghvi College of Engineering", "score":"Pointer:8.8(F.E.)"},
+	{"hyear":"2015-2017","board":"HSC,Maharashtra","per":"Percentage:81.69%"},
+	{"tyear":"2015","school":"Children's Academy","board1":"ICSE","percent":"Percentage:93.85%"}
+] }
