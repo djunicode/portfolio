@@ -1,0 +1,19 @@
+{
+	"information": [
+	{"name": "RAJASI ADURKAR"},
+	{"summary": "Goal-oriented individual with a pleasant personality and a tenacity that knows no restrictions.Highly motivated in excelling in the field of Software Engineering and a constant hunger to learn new technologies that ultimately drive me to towards my ultimate goal of developing cutting edge products that enhance current business processes for organizations thereby helping them to make profitable business decisions"},
+	{"address": "E-302,Gokul Tower,Thakur Complex,Kandivali(E),Mumbai-400101"},
+	{"emailid": "adurkar.rajasi562@gmail.com"},
+	{"number": "7506373607"},
+	{"gitid": "github/rajasi1999"},
+	{"degree": "Bachelor of Engineering: Computer Engineering","year": "2017-2021","college": "Dwarkadas J. Sanghvi College of Engineering - Mumbai, India", "pointer": "F.E Pointer-9.28"},
+	{"college": "Prakash College of Commerce and Science - Mumbai,India ","year": "2017","marks": "HSC Finals-80.31%"},
+	{"school": "Children's Academy - Mumbai,India","year": "2015","marks": "ICSE Finals-95.6%"},
+	{"technical":"TECHNICAL","languages": "Languages: C, Java","web": "Web: HTML","tools": "Tools: MS word,MS PowerPoint, Eclipse, Blue J, Code blocks","concepts": "Concepts: Object Oriented Programming, Procedural Programming"},
+	{"softskills": "SOFT-SKILLS","a": "Strong communication skills(Writing/Verbal)","b": "Good at organisation and management","c": "Critical Thinking"},
+	{"topic": "Order Processing System for an ice-cream shop.","a": "This project was a school project that was designed to handle and streamline the order fulfillment process for an ice-cream parlor.",
+	 "b": "It was a front end code that generated a Menu,took input of customer orders with the parameters of the choice of ice cream and the quantity and finally generate an invoice based on a pre-stored table containing the selling price of each product."},
+	 {"language": "Language used:- Java","tools": "Tools Used- Blue J"}
+   
+]
+}
