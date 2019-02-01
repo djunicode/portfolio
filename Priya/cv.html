@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>UNICODE CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+p{
+color:white;
+font-size:18px;
+ }
+.menu{
+border: 1px solid black;
+padding: 32px;
+background-color: dimgrey;
+}
+p.exe {
+    margin-bottom: inherit;
+}
+p.normal {
+font-style: normal;
+color:white;
+font-size: 30px;
+padding-left:20px;
+text-decoration: underline;
+}
+ .content {
+position: absolute;
+top:130px;
+margin-bottom: 0;
+background-color: rgba(0, 0, 0, 0.3); 
+margin-left:70px;
+margin-right:400px; 
+height:135%;
+width:80%;
+padding: 20px;
+}
+
+.grid-container > div {
+text-align: center;
+padding: 10px 0;
+font-size: 17px;
+font-family:Georgia;
+}
+.grid-contain > div {
+font-size: 15px;
+font-family:Georgia;
+}
+#sample{
+text-align:center; 
+font-style:bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size:50px;
+font-weight: bold;
+margin-top:0;
+  }
+.main{ 
+font-size:30px;
+font-weight:bold;
+color:lightcoral;
+}
+.b{
+font-weight:bold;
+font-size:20px;
+color:hsl(120,60%,70%);
+}
+
+body {
+	background-image: url("https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?cs=srgb&dl=background-beverage-breakfast-414645.jpg&fm=jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-position: center; 
+}
+
+</style>
+</head>
+<body>
+<div class="menu">
+<p class="exe"> </p>
+<p class="normal">CURRICULUM VITAE.</p>
+</div><div class="content">
+<p id="sample" style="color:wheat;"></p>
+<p  align="center">
+<i class="glyphicon glyphicon-user" style="font-size:24px;color:white;"></i>
+<span id="opt" class="main"></span></p>
+<div class="row">
+<div class="grid-container">
+  <div class="col-sm-4"><p >
+<i class="glyphicon glyphicon-earphone" style="color:white;"></i>
+<span id="mobile"></span></p></div>
+  <div class="col-sm-4"><p > <i class="glyphicon glyphicon-envelope" style="color:white;"> </i>
+<span  id="email"></span></p></div>
+  <div class="col-sm-4"><p >
+ <i class="fa fa-github-alt" style="color:white;"></i>
+<span id="github"></span></p>
+</div> 
+</div>
+</div>
+<div class="row">
+<div class="grid-contain" >
+<div class="col-sm-6"><p class="main" >
+<i class="glyphicon glyphicon-education"style="color:white;"></i>
+<span id="education" ></span>
+</p>
+<p id="year"  class="b"></p>
+<p id="depart"></p>
+<p id="college" ></p>
+<p id="score" ></p><br>
+<p id="hyear"  class="b"></p>
+<p id="board" ></p>
+<p id="per" ></p><br>
+<p id="tyear" class="b" ></p>
+<p id="school" ></p>
+<p id="board1" ></p>
+<p id="percent" ></p></div>
+<div class="col-sm-6">
+<p class="main">
+ <i class="fa fa-file-text-o" style="color:white;"></i> <span id="skills"></span></p>
+<ul><p id="technical" class="b"></p>
+<ul><p id="lang" class="b"></p>
+<li><p id="c"></p></li>
+<li><p id="java"></p></li></ul>
+<ul><p id="web" class="b"></p>
+<li><p id="H"></p></li>
+<li><p id="css"></p></li>
+<li><p id="js"></p></li></ul>
+<p id="softskill" class="b"></p>
+<li><p id="s1"></p></li>
+<li><p id="s2"></p></li>
+<li><p id="s3"></p></li></ul></div></div>
+<script>
+var x =new XMLHttpRequest ();
+x.onload=function y() {
+ if (x.readyState == 4 && x.status == 200){
+var data=JSON.parse(x.responseText);
+document.getElementById("sample").innerHTML=data.personalinfo[0].name;
+document.getElementById("opt").innerHTML=data.personalinfo[1].opt;
+document.getElementById("mobile").innerHTML=data.personalinfo[2].mobile;
+document.getElementById("email").innerHTML=data.personalinfo[2].email;
+document.getElementById("github").innerHTML=data.personalinfo[2].github;
+document.getElementById("education").innerHTML=data.personalinfo[3].education;
+document.getElementById("year").innerHTML=data.personalinfo[4].year;
+document.getElementById("depart").innerHTML=data.personalinfo[4].depart;
+document.getElementById("college").innerHTML=data.personalinfo[4].college;
+document.getElementById("score").innerHTML=data.personalinfo[4].score;
+document.getElementById("hyear").innerHTML=data.personalinfo[5].hyear;
+document.getElementById("board").innerHTML=data.personalinfo[5].board;
+document.getElementById("per").innerHTML=data.personalinfo[5].per;
+document.getElementById("tyear").innerHTML=data.personalinfo[6].tyear;
+document.getElementById("school").innerHTML=data.personalinfo[6].school;
+document.getElementById("board1").innerHTML=data.personalinfo[6].board1;
+document.getElementById("percent").innerHTML=data.personalinfo[6].percent;
+document.getElementById("skills").innerHTML=data.personalinfo[7].skills;
+document.getElementById("technical").innerHTML=data.personalinfo[8].technical;
+document.getElementById("lang").innerHTML=data.personalinfo[9].lang;
+document.getElementById("c").innerHTML=data.personalinfo[9].c;
+document.getElementById("java").innerHTML=data.personalinfo[9].java;
+document.getElementById("web").innerHTML=data.personalinfo[10].web;
+document.getElementById("H").innerHTML=data.personalinfo[10].H;
+document.getElementById("css").innerHTML=data.personalinfo[10].css;
+document.getElementById("js").innerHTML=data.personalinfo[10].js;
+document.getElementById("softskill").innerHTML=data.personalinfo[11].softskill;
+document.getElementById("s1").innerHTML=data.personalinfo[12].s1;
+document.getElementById("s2").innerHTML=data.personalinfo[12].s2;
+document.getElementById("s3").innerHTML=data.personalinfo[12].s3;
+}
+}
+x.open("GET","https://gist.githubusercontent.com/priyashah31/8bd2c1d06829649d955986d75a0f3c94/raw/6cf73c3591366448a11312720086c0500ce32b2d/personalinfo.json",true);
+x.send();
+</script>
+</div>
+<h3 align="center" style="color:Bisque ;">SOCIAL MEDIA:</h3>
+<p align="center"><i class="fa fa-facebook-official" style="font-size:28px;color:white;"></i>
+<i class="fa fa-instagram"  style="font-size:28px;color:white;"></i>
+<i class="fa fa-linkedin-square" style="font-size:28px;color:white;"></i></p>
+</body>
+</html>
